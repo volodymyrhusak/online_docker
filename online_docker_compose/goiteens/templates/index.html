@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Social network</title>
+    <meta charset="utf-8">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+	<header>HEADER</header>
+	
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 group-banner">
+					<img src="https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/23674750_1635664119819345_9183815770424691419_o.jpg?oh=522b82eca13366e79ed003bdcac36eea&oe=5ACC9A93">
+					<div class="group-banner-footer">
+						<div class="btn-group">
+							<button class="btn btn-default btn-like">
+								<span class="glyphicon glyphicon-thumbs-up"></span>Like
+							</button>
+							<button class="btn btn-default btn-follow">
+								<span class="glyphicon glyphicon-signal"></span>Follow
+							</button>
+							<button class="btn btn-default btn-share">
+								<span class="glyphicon glyphicon-share-alt"></span>Share
+							</button>
+						</div>
+						<button class="btn btn-primary btn-send-message">Send message</button>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 group-content">
+					<section class="add-new-post">
+						<div class="new-post-header">
+							<button class="btn btn-warning btn-status">
+								<span class="glyphicon glyphicon-pencil"></span>Status
+							</button>
+							<div class="btn-media">
+								<input type="file" id="files" />
+								<div class="btn btn-danger">
+									<span class="glyphicon glyphicon-camera"></span>Photo/Video
+								</div>
+							</div>
+							<img class="img-circle" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-1/p40x40/14100305_1759855060897943_7844781317309267984_n.jpg?oh=0b3187675c04f0d726e9ec3092b5dda1&oe=5A97F106">
+						</div>
+						<div class="new-post-content">
+							<img id="upload-image" />
+							<textarea placeholder="Add some text"></textarea>
+						</div>
+						<div class="new-post-footer">
+							<div class="btn-group">
+								<span class="glyphicon glyphicon-camera"></span>
+								<span class="glyphicon glyphicon-user"></span>
+								<span class="glyphicon glyphicon-save"></span>
+							</div>
+							<button class="btn btn-primary btn-add-post">Add Post</button>
+						</div>
+					</section>
+					<div class="posts">
+						<article class="single-post" id="1">
+							<div class="post-header">
+								<img class="img-circle" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-1/p40x40/14100305_1759855060897943_7844781317309267984_n.jpg?oh=0b3187675c04f0d726e9ec3092b5dda1&oe=5A97F106">
+								<p><strong>Group Name</strong> <em>share some info from</em> <strong>User Name</strong></p>
+								<span class="post-time"><em>1 hour</em></span>
+							</div>
+							<div class="post-content">
+								<div class="post-top-description">
+									<p>Останні дні розпродажу</p>
+								</div>
+								<div class="post-media-content">
+									<img src="https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/23674750_1635664119819345_9183815770424691419_o.jpg?oh=522b82eca13366e79ed003bdcac36eea&oe=5ACC9A93">
+								</div>
+								<div class="post-aditional-description">
+									<p>🔥 BLACK FRIDAY ТРИВАЄ! 🎉 Більше 1000 духів і декоративної косметики за найнижчими цінами 🔥 Швидше замовляй на ➡ HTTPS://PARFUMCITY.COM.UA
+										　💎 Більше 3000 відгуків 
+									　🔥 Акція: 1 + 1 = ПОДАРУНОК 
+									　✅ Оплата при отриманні і без попередньої оплати 
+									　✅ Безкоштовна доставка від двох позицій 
+									　🎁 Подарунки вибирає клієнт
+									💃Поквапся і роби замовлення прямо зараз</p>
+								</div>
+							</div>
+							<div class="post-footer">
+								<button class="btn btn-default btn-like">
+									<span class="glyphicon glyphicon-thumbs-up"></span>Like
+								</button>
+								<button class="btn btn-default btn-comment">
+									<span class="glyphicon glyphicon-edit"></span>Comment
+								</button>
+								<button class="btn btn-default btn-share">
+									<span class="glyphicon glyphicon-share-alt"></span>Share
+								</button>
+							</div>
+							<div class="likes-block">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								<span class="likes-number">5</span>
+							</div>
+							<div class="comments">
+								<div class="comment">
+									<div class="comment-photo">
+										<img class="img-circle" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-1/p40x40/14100305_1759855060897943_7844781317309267984_n.jpg?oh=0b3187675c04f0d726e9ec3092b5dda1&oe=5A97F106">
+									</div>
+									<div class="comment-content">
+										<span class="comment-author"></span>
+										<span class="author-content">Happy New Year!!!</span>
+										<div class="comment-buttons">
+											<span>Like</span>
+											<span>Answer</span>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="post-comment">
+								<img class="img-circle" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-1/p40x40/14100305_1759855060897943_7844781317309267984_n.jpg?oh=0b3187675c04f0d726e9ec3092b5dda1&oe=5A97F106">
+								<textarea placeholder="Add some comment"></textarea>
+								<div class="btn-group">
+									<span class="glyphicon glyphicon-camera"></span>
+									<span class="glyphicon glyphicon-user"></span>
+									<span class="glyphicon glyphicon-save"></span>
+									<div class="btn btn-primry btn-add-comment">comment</div>
+								</div>
+							</div>
+						</article>
+						<article class="single-post">
+							<div class="post-header">
+								<img class="img-circle" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-1/p40x40/14100305_1759855060897943_7844781317309267984_n.jpg?oh=0b3187675c04f0d726e9ec3092b5dda1&oe=5A97F106">
+								<p><strong>Group Name</strong> <em>share some info from</em> <strong>User Name</strong></p>
+								<span class="post-time"><em>1 hour</em></span>
+							</div>
+							<div class="post-content">
+								<div class="post-top-description">
+									<p>Останні дні розпродажу</p>
+								</div>
+								<div class="post-media-content">
+									<img src="https://scontent-waw1-1.xx.fbcdn.net/v/t31.0-8/23674750_1635664119819345_9183815770424691419_o.jpg?oh=522b82eca13366e79ed003bdcac36eea&oe=5ACC9A93">
+								</div>
+								<div class="post-aditional-description">
+									<p>🔥 BLACK FRIDAY ТРИВАЄ! 🎉 Більше 1000 духів і декоративної косметики за найнижчими цінами 🔥 Швидше замовляй на ➡ HTTPS://PARFUMCITY.COM.UA
+										　💎 Більше 3000 відгуків 
+									　🔥 Акція: 1 + 1 = ПОДАРУНОК 
+									　✅ Оплата при отриманні і без попередньої оплати 
+									　✅ Безкоштовна доставка від двох позицій 
+									　🎁 Подарунки вибирає клієнт
+									💃Поквапся і роби замовлення прямо зараз</p>
+								</div>
+							</div>
+							<div class="post-footer">
+								<button class="btn btn-default btn-like">
+									<span class="glyphicon glyphicon-thumbs-up"></span>Like
+								</button>
+								<button class="btn btn-default btn-comment">
+									<span class="glyphicon glyphicon-edit"></span>Comment
+								</button>
+								<button class="btn btn-default btn-share">
+									<span class="glyphicon glyphicon-share-alt"></span>Share
+								</button>
+							</div>
+							<div class="likes-block">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								<span class="likes-number">5</span>
+							</div>
+							<div class="comments"></div>
+							<div class="post-comment">
+								<img class="img-circle" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-1/p40x40/14100305_1759855060897943_7844781317309267984_n.jpg?oh=0b3187675c04f0d726e9ec3092b5dda1&oe=5A97F106">
+								<textarea placeholder="Add some comment"></textarea>
+								<div class="btn-group">
+									<span class="glyphicon glyphicon-camera"></span>
+									<span class="glyphicon glyphicon-user"></span>
+									<span class="glyphicon glyphicon-save"></span>
+									<div class="btn btn-primry btn-add-comment">comment</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="col-sm-4 group-info">
+					<h4>Group info</h4>
+					<div class="main-group-info">
+						<ul>
+							<li>233 917 людей вподобали це</li>
+							<li>256 619 людей стежать за цим</li>
+							<li>233 917 людей вподобали це</li>
+							<li>256 619 людей стежать за цим</li>
+						</ul>
+					</div>
+					<div class="main-group-info">
+						<ul>
+							<li>233 917 людей вподобали це</li>
+							<li>256 619 людей стежать за цим</li>
+							<li>233 917 людей вподобали це</li>
+							<li>256 619 людей стежать за цим</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+
+	<footer>FOOTER</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+</html>

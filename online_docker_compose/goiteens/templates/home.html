@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+	{%if context:%}
+		<p>HELL0 {{context.user.object.first_name}} {{context.user.object.last_name}} !!!)))</p>
+	{%else%}
+		<p>HELL0 Unknown ((((</p>
+	{%endif%}
+
+	{%if context.user.object.id != context.loginUser.object.id%}
+		<form method="GET" action="/add_friend">
+						<input type="name" class="form-control" name="id" value="{{context.user.object.id}}" style="display:none">
+		<br><button type="submit" class="btn btn-danger">add friend</button>
+	{%endif%}
+	</form>
+{% endblock %}
+

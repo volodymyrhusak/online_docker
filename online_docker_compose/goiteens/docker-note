@@ -1,0 +1,43 @@
+docker pull python:3 - загрузити контейнер з пайтоном версії 3
+docker run -it python:3 python - запускаємо контейнер в інтерактивному режимі і програму яку хочемо запустити (--rm)
+docker run -it python:3 pip install flask
+docker ps -a
+docker diff <id> - ід образу
+docker commit <id> name - створити новий образ
+docker images - список образів
+docker rm <id>
+
+docker build -t name .
+
+
+
+docker -v `pwd`:/data
+
+docker run -p 8000:8000 -v `pwd`:/data --rm -it <name> ./goiteens/app.py
+
+docker-compose run --rm web python app.py
+
+Dockerfile
+    FROM python:3
+    RUN pip install flask
+    RUN mkdir /data
+    WORKDIR /data
+
+docker-compose.yml
+    version: '2'
+    services:
+        web:
+            build: ./flask_app
+            command: python app.py
+            ports:
+            - 8000:8000
+            volumes:
+            - ./flask_app:/flask_app
+
+Dockerfile
+FROM python:3
+RUN mkdir /data
+WORKDIR /data
+ADD requirements.txt /flask_app
+RUN pip install -t requirements.txt
+ADD . /flask_app

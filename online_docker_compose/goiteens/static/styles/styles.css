@@ -1,0 +1,251 @@
+header {
+	min-height: 50px;
+	width: 100%;
+	background-color: blue;
+	text-align: center;
+}
+footer {
+	min-height: 50px;
+	width: 100%;
+	background-color: red;	
+	text-align: center;
+}
+body {
+	background-color: #9fd9a5;
+}
+/* banner secton*/
+.group-banner-footer {
+	background-color: #fff;
+	padding: 10px;
+	overflow: hidden;
+}
+.group-banner-footer .btn:not(.btn-primary) {
+	background-color: #e5e5e5;
+}
+.group-banner-footer .glyphicon {
+	margin-right: 10px;
+}
+.btn-send-message {
+	float: right;
+}
+/*END banner secton*/
+/* add new post section */
+.add-new-post {
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+.new-post-header {
+	background-color: #e5e5e5;
+	overflow: hidden;
+}
+.new-post-header .btn {
+	margin-left: 10px;
+	margin-top: 3px;
+} 
+.new-post-header .glyphicon {
+	margin-right: 10px;
+}
+.new-post-header .img-circle {
+	float: right;
+	margin-right: 10px;
+}
+.group-banner {
+	margin-bottom: 30px;
+}
+.group-banner img {
+	width: 100%;
+}
+.btn-status {
+	margin-right: 10px;
+}
+.new-post-content {
+	background-color: #fff;
+}
+.new-post-content textarea {
+	min-height: 80px;
+	width: 100%;
+	resize: none;
+	outline: none;
+}
+.new-post-footer {
+	background-color: #e5e5e5;
+	overflow: hidden;
+}
+.btn-add-post {
+	float: right;
+	margin-right: 10px;
+}
+.new-post-footer .btn-group {
+	margin-left: 10px;
+}
+.new-post-footer .glyphicon {
+	font-size: 20px;
+    vertical-align: middle;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+.new-post-footer .glyphicon + .glyphicon {
+	margin-left: 10px;
+}
+/* END add new post section */
+
+/* group info section */
+.group-info h4 {
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	margin-top: 0;
+	margin-bottom: 30px;
+	padding: 5px 10px;
+}
+.main-group-info {
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 30px;
+	padding: 5px 10px;
+}
+/* END group info section */
+
+/* single post section */
+.single-post {
+	border: 1px solid #e5e5e5;
+	background-color: #fff;
+	margin-bottom: 30px;
+	padding: 15px;
+}
+.post-header img {
+	float: left;
+    margin-right: 20px;
+}
+.post-header p {
+	padding-top: 5px;
+}
+.post-media-content img {
+	width: 100%;
+}
+.post-top-description {
+	margin-top: 20px;
+}
+.post-aditional-description {
+	margin: 10px 0;
+    border: 1px solid #999;
+    padding: 10px;
+}
+.post-footer {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
+.post-footer .glyphicon {
+	margin-right: 10px;
+}
+.post-footer .btn + .btn {
+	margin-left: 15px;
+}
+#upload-image {
+	display: block;
+}
+#upload-image.active {
+	width: 100%;
+	min-width: 200px;
+	min-height: 200px;
+}
+.btn-media {
+	position: relative;
+	display: inline-block;
+}
+.btn-media:hover .btn-danger {
+    background-color: #c9302c;
+    cursor: pointer;
+}
+#files {
+	position: absolute;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.likes-block {
+	background-color: #e5e5e5;
+	padding: 10px;
+	margin-top: 10px;
+}
+.likes-block .glyphicon {
+	color: #fff;
+	background-color: aqua;
+	border-radius: 50%;
+	margin-right: 8px;
+	font-size: 16px;
+    padding: 8px;
+}
+.post-comment {
+	overflow: hidden;
+	border-top: 1px solid;
+	background-color: #e5e5e5;
+	padding: 10px;
+}
+.post-comment img {
+	max-width: 50px;
+	margin-right: 10px;
+	vertical-align: top;
+    padding-top: 10px;
+}
+.post-comment textarea {
+	min-width: 260px;
+	resize: none;
+	padding: 10px;
+	border-radius: 15px;
+	margin-right: 10px;
+	outline: none;
+}
+.post-comment .btn-group {
+	vertical-align: top;
+	padding-top: 8px;
+}
+.post-comment .glyphicon {
+	font-size: 20px;
+	cursor: pointer;
+
+}
+.post-comment .glyphicon + .glyphicon {
+	margin-left: 10px;
+}
+/* END single post section */
+.btn.btn-primry.btn-add-comment {
+	position: absolute;
+    background: #9da3d1;
+    left: 0;
+    bottom: -26px;
+    padding: 0 5px;
+    border-radius: 0;
+}
+.comment {
+	background-color: #e5e5e5;
+	padding: 10px;
+	border-top: 1px solid #ccc;
+}
+.comment-photo {
+    vertical-align: top;
+    display: inline-block;
+    width: 42px;
+}
+.comment-content {
+	vertical-align: top;
+    display: inline-block;
+    width: calc(100% - 50px);
+    padding-left: 10px;
+}
+.comment-author {
+	font-weight: 700;
+	color: #57c4a6;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.comment-buttons span {
+	color: #6773c8;
+	cursor: pointer;
+}
+.comment-buttons span + span {
+	margin-left: 10px;
+}

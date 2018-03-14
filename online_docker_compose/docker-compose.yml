@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: ./goiteens
+    command: python app.py
+    ports:
+    - 8000:8000
+    volumes:
+    - ./goiteens:/flask_app
