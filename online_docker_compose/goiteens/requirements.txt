@@ -19,7 +19,7 @@ hyperlink==17.3.1
 idna==2.6
 incremental==17.5.0
 itsdangerous==0.24
-Jinja2==2.8
+Jinja2==2.11.3
 MarkupSafe==0.23
 python-engineio==2.0.2
 python-socketio==1.8.4
